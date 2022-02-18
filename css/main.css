@@ -14,11 +14,13 @@
 h1{
   font-family: Arial;
   font-style: italic;
+  color: #999999;
 }
 
 p{
   font-style: italic;
   font-family: Arial;
+  color: #999999;
 }
 
 #myVideo {
