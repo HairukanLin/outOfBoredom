@@ -2,17 +2,19 @@
 // Get the video
 var video = document.getElementById("myVideo");
 
+
 // Get the button
 var btn = document.getElementById("myBtn");
-
+var anotherTrackPlayer = false;
+var currentTrack
 // Pause and play the video, and change the button text
 function myFunction() {
-  console.log
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
+  if(!anotherTrackPlayer) {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+    anotherTrackPlayer = true;
+  }
+  else{
+
   }
 }

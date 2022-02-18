@@ -37,6 +37,10 @@
     <source src="rain.mp4" type="video/mp4">
   </video>
 
+  <audio id="myAudio">
+    <source src="it_started.mp3" type="audio/mpeg">
+  </audio>
+
   <!-- Optional: some overlay text to describe the video -->
 
   <div class="content">
@@ -46,12 +50,15 @@
     <button id="myBtn" onclick="myFunction()"> <p class="special">1</p></button>
 
 
+
   </div>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    var audio = document.getElementById("myAudio")
+
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
