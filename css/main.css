@@ -17,6 +17,10 @@ h1{
   color: #999999;
 }
 
+body{
+  background-image: url("CD-1.jpg");
+}
+
 p{
   font-style: italic;
   font-family: Arial;
@@ -72,6 +76,8 @@ p{
   background: yellow;
   color: black;
 }
+
+
 
 #myBtnOne {
   width: 100px;
