@@ -8,7 +8,7 @@ var btn = document.getElementById("myBtn");
 var lastPlayTrack = "empty";
 var currentTrack
 // Pause and play the video, and change the button text
-function myFunction(track) {
+function myFunction(track, video) {
     if(lastPlayTrack != 'empty') {
       document.getElementById(lastPlayTrack).pause();
       document.getElementById(lastPlayTrack).currentTime = 0;
@@ -16,6 +16,7 @@ function myFunction(track) {
     var audio = document.getElementById(track);
     audio.play();
     lastPlayTrack = track;
+    document.getElementById("myVideo").src=video;
 
 }
 
