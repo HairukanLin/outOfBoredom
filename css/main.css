@@ -129,7 +129,7 @@ p{
   color: black;
 }
 
-#myBtnGetAlbum {
+#myBtnSixNine {
   width: 100px;
   font-size: 18px;
   padding: 10px;
@@ -139,8 +139,8 @@ p{
   cursor: pointer;
 }
 
-#myBtnGetAlbum:hover {
-  background: yellow;
+#myBtnSixNine:hover {
+  background: grey;
   color: black;
 }
 
