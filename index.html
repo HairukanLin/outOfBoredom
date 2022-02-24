@@ -39,7 +39,7 @@
 
 
   <audio id="myAudio">
-    <source src="it_started.mp3" type="audio/mpeg">
+    <source src="1.mp3" type="audio/mpeg">
   </audio>
 
   <audio id="myAudioOne">
@@ -47,19 +47,35 @@
   </audio>
 
   <audio id="myAudioTwo">
-    <source src="8.mp3" type="audio/mpeg">
+    <source src="3.mp3" type="audio/mpeg">
   </audio>
 
   <audio id="myAudioThree">
-    <source src="7.mp3" type="audio/mpeg">
+    <source src="4.mp3" type="audio/mpeg">
   </audio>
 
   <audio id="myAudioFour">
-    <source src="6.mp3" type="audio/mpeg">
+    <source src="5.mp3" type="audio/mpeg">
   </audio>
 
   <audio id="myAudioFive">
-    <source src="5.mp3" type="audio/mpeg">
+    <source src="6.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioSix">
+    <source src="7.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioSeven">
+    <source src="8.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioEigth">
+    <source src="9.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioNine">
+    <source src="10.mp3" type="audio/mpeg">
   </audio>
 
 
@@ -68,16 +84,19 @@
 
   <div class="content">
     <h1>out of boredom</h1>
-    <p>there is no ambition whatsoever on the 24.02.2022 or 26.02.2022. unclear yet</p>
+    <p>No ambition whatsoever released with the start of a war and was also a birthday gift. Listen to it</p>
     <!-- Use a button to pause/play the video with JavaScript -->
+    <a href="stream.html"><button id="myBtnGetAlbum" > <p class="special">GET THE ALBUM</p></button></a>
     <button id="myBtn" onclick="myFunction('myAudio', 'rain.mp4')"> <p class="special">1</p></button>
     <button id="myBtnOne" onclick="myFunction('myAudioOne', 'studiotest.mp4')"> <p class="special">2</p></button>
-    <button id="myBtnFive" onclick="myFunction('myAudioFive', 'bahn.mp4')"> <p class="special">5</p></button>
-    <button id="myBtnFour" onclick="myFunction('myAudioFour', 'bank.mp4')"> <p class="special">6</p></button>
-    <button id="myBtnThree" onclick="myFunction('myAudioThree', 'hmm.mp4')"> <p class="special">7</p></button>
-    <button id="myBtnTwo" onclick="myFunction('myAudioTwo', 'fire.mp4')"> <p class="special">8</p></button>
-
-
+    <button id="myBtnFive" onclick="myFunction('myAudioTwo', 'bahn.mp4')"> <p class="special">3</p></button>
+    <button id="myBtnFour" onclick="myFunction('myAudioThree', 'bank.mp4')"> <p class="special">4</p></button>
+    <button id="myBtnThree" onclick="myFunction('myAudioFour', 'hmm.mp4')"> <p class="special">5</p></button>
+    <button id="myBtnTwo" onclick="myFunction('myAudioFive', 'fire.mp4')"> <p class="special">6</p></button>
+    <button id="myBtnSix" onclick="myFunction('myAudioSix', 'fire.mp4')"> <p class="special">7</p></button>
+    <button id="myBtnSeven" onclick="myFunction('myAudioSeven', 'fire.mp4')"> <p class="special">8</p></button>
+    <button id="myBtnEight" onclick="myFunction('myAudioEigth', 'helmet.mp4')"> <p class="special">9</p></button>
+    <button id="myBtnNine" onclick="myFunction('myAudioNine', '.mp4')"> <p class="special">10</p></button>
     <button id="stopBtn" onclick="stopPlaying()"> <p class="special">stop</p></button>
 
 
@@ -85,14 +104,15 @@
 
   </div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-023XHJJZV4"></script>
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    var audio = document.getElementById("myAudio")
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
+    gtag('config', 'G-023XHJJZV4');
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>

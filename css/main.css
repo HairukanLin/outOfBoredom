@@ -114,6 +114,83 @@ p{
   color: black;
 }
 
+#myBtnSix {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtnSix:hover {
+  background: grey;
+  color: black;
+}
+
+#myBtnGetAlbum {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtnGetAlbum:hover {
+  background: yellow;
+  color: black;
+}
+
+#myBtnSeven {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtnSeven:hover {
+  background: grey;
+  color: black;
+}
+
+#myBtnEight {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtnEight:hover {
+  background: grey;
+  color: black;
+}
+
+
+#myBtnNine {
+  width: 100px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtnNine:hover {
+  background: grey;
+  color: black;
+}
+
+
 
 
 #myBtnThree:hover {
