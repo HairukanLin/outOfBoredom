@@ -62,6 +62,12 @@ p{
   color: darkseagreen;
 }
 
+.specialGET{
+
+  color: darkseagreen;
+  font-size: smaller;
+}
+
 /* Style the button used to pause/play the video */
 #myBtn {
   width: 100px;
