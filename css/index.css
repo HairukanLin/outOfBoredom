@@ -169,3 +169,12 @@ h1{
   content: '';
   animation: dot-animation 10s steps(1, end) infinite;
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .main-pic-container {
+    flex-direction: column; /* Stack the divs vertically on mobile */
+    align-items: center; /* Optional: Center align items horizontally */
+    gap: 10px; /* Optional: Adjust spacing between divs */
+  }
+}
