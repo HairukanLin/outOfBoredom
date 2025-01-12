@@ -175,6 +175,13 @@ h1{
   .main-pic-container {
     flex-direction: column; /* Stack the divs vertically on mobile */
     align-items: center; /* Optional: Center align items horizontally */
-    gap: 10px; /* Optional: Adjust spacing between divs */
+    gap: 0.25em; /* Optional: Adjust spacing between divs */
+  }
+}
+
+@media (max-width: 768px) {
+  #myBtnTwo {
+    top: 70%;
+    left: 22%;
   }
 }
