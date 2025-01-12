@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>OoB 24.02/26.02</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/noAmb.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+  <!-- The video -->
+  <video autoplay loop muted playsinline id="myVideo" poster="lol.PNG">
+    <source src="rain.mp4" type="video/mp4">
+  </video>
+
+
+  <audio id="myAudio">
+    <source src="noAmbMp3/1.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioOne">
+    <source src="noAmbMp3/2.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioTwo">
+    <source src="noAmbMp3/3.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioThree">
+    <source src="noAmbMp3/4.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioFour">
+    <source src="noAmbMp3/5.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioFive">
+    <source src="noAmbMp3/6.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioSix">
+    <source src="noAmbMp3/7.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioSeven">
+    <source src="noAmbMp3/8.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioEigth">
+    <source src="noAmbMp3/9.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="myAudioNine">
+    <source src="noAmbMp3/10.mp3" type="audio/mpeg">
+  </audio>
+
+
+
+  <!-- Optional: some overlay text to describe the video -->
+
+  <div class="content">
+    <h1 class="special">out of boredom</h1>
+    <p>No ambition whatsoever released with the start of a war and was also a birthday gift. 24.02.2022</p>
+    <!-- Use a button to pause/play the video with JavaScript -->
+    <a href="stream.html"><button id="myBtnSixNine" > <p class="special">GET THE ALBUM</p></button></a>
+    <button id="myBtn" onclick="myFunction('myAudio', 'rain.mp4')"> <p class="special">1</p></button>
+    <button id="myBtnOne" onclick="myFunction('myAudioOne', 'studiotest.mp4')"> <p class="special">2</p></button>
+    <button id="myBtnFive" onclick="myFunction('myAudioTwo', 'bahn.mp4')"> <p class="special">3</p></button>
+    <button id="myBtnFour" onclick="myFunction('myAudioThree', 'bank.mp4')"> <p class="special">4</p></button>
+    <button id="myBtnThree" onclick="myFunction('myAudioFour', 'hmm.mp4')"> <p class="special">5</p></button>
+    <button id="myBtnTwo" onclick="myFunction('myAudioFive', 'fire.mp4')"> <p class="special">6</p></button>
+    <button id="myBtnSix" onclick="myFunction('myAudioSix', 'hoch.mp4')"> <p class="special">7</p></button>
+    <button id="myBtnSeven" onclick="myFunction('myAudioSeven', 'mai.mp4')"> <p class="special">8</p></button>
+    <button id="myBtnEight" onclick="myFunction('myAudioEigth', 'helmet.mp4')"> <p class="special">9</p></button>
+    <button id="myBtnNine" onclick="myFunction('myAudioNine', 'schaukel.mp4')"> <p class="special">10</p></button>
+    <button id="stopBtn" onclick="stopPlaying()"> <p class="special">stop</p></button>
+  </div>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-023XHJJZV4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-023XHJJZV4');
+  </script>
+</body>
+
+</html>

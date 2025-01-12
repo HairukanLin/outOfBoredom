@@ -1,0 +1,171 @@
+body{
+  background: #222222;
+}
+
+
+h1{
+  font-family: Arial;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+}
+
+.center-Text{
+  text-align: center;
+}
+
+.white-text {
+  font-family: Arial;
+  color: white;
+}
+
+
+.yellow-text {
+  font-family: Arial;
+  color: yellowgreen;
+  text-align: center;
+}
+
+#myBtnOne {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 170px; /* Adjusted for better fit */
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+#myBtnOne:hover {
+  background: black; /* Full black background on hover */
+  color: white; /* White text on hover */
+  border-color: rgba(255, 255, 255, 1); /* Solid white border on hover */
+}
+
+#myBtnOne p {
+  margin: 0; /* Remove default margin */
+  color: inherit; /* Inherit color from the button */
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center; /* Center the text */
+}
+
+
+#myBtnTwo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 170px; /* Adjusted for better fit */
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
+#myBtnTwo:hover {
+  background: black; /* Full black background on hover */
+  color: white; /* White text on hover */
+  border-color: rgba(255, 255, 255, 1); /* Solid white border on hover */
+}
+
+#myBtnTwo p {
+  margin: 0; /* Remove default margin */
+  color: inherit; /* Inherit color from the button */
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center; /* Center the text */
+}
+
+.special{
+
+  color: darkseagreen;
+}
+
+/* General Styling */
+.special {
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+}
+
+.center-Text {
+  text-align: center;
+}
+
+.white-text {
+  color: white;
+}
+
+.main-pic-container {
+  display: flex;
+  justify-content: center;
+}
+.image-background-noAmb {
+
+  width:40em; /*width of your image*/
+  height:40em; /*height of your image*/
+  position: relative;
+  background: url("../CD-1.jpg");
+  background-size: contain;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.image-background-sorry {
+
+  width:39em; /*width of your image*/
+  height:30em; /*height of your image*/
+  position: relative;
+  background: url("../so sorry.jpg");
+  background-size: contain;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+
+
+.video-separator {
+  width: 15px; /* Thickness of the line */
+  background-color: #ccc; /* Line color */
+  background: linear-gradient(to right, darkseagreen, #70D6ED);
+}
+
+
+/* Three Dots Animation */
+.dots {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  white-space: pre; /* Ensures spacing is preserved */
+}
+
+
+
+@keyframes dot-animation {
+  0% { content: '.'; }
+  25% { content: '..'; }
+  50% { content: '...'; }
+  75% { content: '..'; }
+  100% { content: '.'; }
+}
+
+.dots::after {
+  content: '';
+  animation: dot-animation 10s steps(1, end) infinite;
+}
