@@ -132,7 +132,7 @@ h1{
   width:39em; /*width of your image*/
   height:30em; /*height of your image*/
   position: relative;
-  background: url("../so sorry.jpg");
+  background: url("../img/img.png");
   background-size: contain;
   overflow: hidden; /* Prevent content overflow */
 }
