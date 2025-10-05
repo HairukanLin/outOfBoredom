@@ -1,5 +1,7 @@
 var currentActiveIndexCarrousel = 0;
 
+
+
 function onArrowClick(direction) {
   const ul = document.querySelector('.content ul');
   const items = ul.querySelectorAll('li');
