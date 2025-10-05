@@ -2,13 +2,12 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: white;
-  overflow: hidden;
+  overflow-y: auto;  /* Changed from overflow: hidden */
 }
 
 /* Background video */
@@ -32,16 +31,131 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.6);
   backdrop-filter: blur(10px);
 }
-
-/* Profile */
-.profile img {
-  width: 100%;
-  max-width: 300px;   /* keeps it mid-sized */
-  margin-bottom: 15px;
-  border-radius: 20px; /* nice rounded rectangle */
-  border: 3px solid white;
+/* Make sure the main wrapper stacks elements neatly */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em; /* space between elements */
 }
 
+
+.profile-name {
+  font-style: italic;
+}
+
+.content ul {
+  display: flex;
+  gap: 0.75em;
+  scroll-marker-group: after;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.content li {
+  list-style-type: none;
+  padding: 20px;
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.9em;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.carousel-indicators span {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators span.active {
+  background-color: #333;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 12px;
+}
+
+.share-button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+
+  min-width: 2.5em;
+  min-height: 2.5em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.share-button:hover {
+  background-color: white;
+}
+
+.share-button:active {
+  transform: scale(0.98);
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+.carousel-arrow:active {
+  transform: scale(0.95);
+}
+
+
+
+.profile-pic img {
+  width: 10em;             /* roughly 160px → 10em if base font-size ≈16px */
+  height: auto;
+  border-radius: 1.25em;   /* rounded rectangle corners */
+  border: 0.2em solid white;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.2em;
+}
+
+
+
+.content {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 2em 2em;
+  border-radius: 1.25em;
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.6);
+}
 .boldText {
   font-weight: bold;
 }

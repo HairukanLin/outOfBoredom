@@ -20,56 +20,132 @@
   <link rel="stylesheet" href="css/marketingpage_no_amb.css">
 
 
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
+<!-- Add your site or application content here -->
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/marketingPage.js"></script>
 
 
 
-  <!-- The video -->
-  <video autoplay loop muted playsinline id="myVideo" poster="lol.PNG">
-    <source src="vids/noAmbRedux/noAmbBackgroundTeaser.mp4" type="video/mp4">
-  </video>
+<!-- The video -->
+<video autoplay loop muted playsinline id="myVideo" poster="lol.PNG">
+  <source src="vids/try/clouds.TS.mp4" type="video/mp4">
+</video>
+
+
+<div class="main-wrapper">
+  <div class="profile-name">
+    <h1>Out of Boredom</h1>
+  </div>
+
+  <div class="profile-pic">
+    <img src="img/newAlbumCover.png" alt="Artist Picture">
+  </div>
+
+  <div class="content">
+    <h3 style="margin: 0">Albums</h3>
+    <ul style="margin: 0">
+      <li>
+        <!-- No am redux-->
+        <p style="color: darkseagreen; font-weight: bold">No ambition whatsoever (Redux)</p>
+        <small>Release 17th October 2025</small>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3JF1c7iRLybJnkVMIVkrko?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px; display: none" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_nX7Ei8Bg1tPDzgjHJdiLhWSxafvy7d1qA" title="YouTube playlist" width="100%" height="352" frameBorder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px; display: none" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/de/album/nicest-girl-out-there-redux-single/1844082927"></iframe>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'spotify')">
+          <img src="img/spotify-icon.svg" alt="Spotify" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'youtube')">
+          <img src="img/youtube-icon.svg" alt="YouTube" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'apple')">
+          <img src="img/apple-music-icon.svg" alt="Apple Music" class="share-icon">
+        </button>
+
+      </li>
+      <li>
+        <!-- Trying to be truly sorry-->
+        <p style="color: #b3d4fc; font-weight: bold">Trying to be truly sorry</p>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/7fb0MD3bBIcrtVjKcNpK4W?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px; display: none" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_klHGHivSLxXzN-oPvP4S9wCZhrnQnXuxU" title="YouTube playlist" width="100%" height="352" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px; display: none" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/de/album/trying-to-be-truly-sorry/1798581050"></iframe>
+        <iframe style="border-radius:12px; display: none" width="100%" height="352" scrolling="no" frameborder="0" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1974359372&color=%2300d1ff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" loading="lazy"></iframe>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'spotify')">
+          <img src="img/spotify-icon.svg" alt="Spotify" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'youtube')">
+          <img src="img/youtube-icon.svg" alt="YouTube" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'apple')">
+          <img src="img/apple-music-icon.svg" alt="Apple Music" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'soundcloud')">
+          <img src="img/soundcloud-icon.svg" alt="SoundCloud" class="share-icon">
+        </button>
+      </li>
+      <li>
+        <!-- No amb-->
+        <p style="color: darkseagreen; font-weight: bold">No ambition whatsoever</p>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/5elD3bwPIRk0XuQxa5qpsw?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <iframe style="border-radius:12px; display: none" src="https://www.youtube.com/embed/videoseries?list=OLAK5uy_lG1P1KABY0Zz8ONWGLN4Pw1gj7crZNlJk" title="YouTube playlist" width="100%" height="352" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+        <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px; display: none" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/de/album/no-ambition-whatsoever/1611689597"></iframe>
+        <iframe
+          style="border-radius:12px; display: none"
+          width="100%"
+          height="352"
+          scrolling="no"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A1400660080&color=%23244a21&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'spotify')">
+          <img src="img/spotify-icon.svg" alt="Spotify" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'youtube')">
+          <img src="img/youtube-icon.svg" alt="YouTube" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'apple')">
+          <img src="img/apple-music-icon.svg" alt="Apple Music" class="share-icon">
+        </button>
+        <button class="share-button" onclick="changeAlbumPreviewScreen(this.parentElement, 'soundcloud')">
+          <img src="img/soundcloud-icon.svg" alt="Apple Music" class="share-icon">
+        </button>
+      </li>
+    </ul>
+    <div class="carousel-indicators">
+      <button class="carousel-arrow carousel-arrow-left" id="leftArrow" onclick="onArrowClick('left')">‹</button>
+      <span id="circleOneCar" class="active"></span>
+      <span id="id=circleTwoCar"></span>
+      <span id="id=circleThreeCar"></span>
+      <button class="carousel-arrow carousel-arrow-right" id="rightArrow" onclick="onArrowClick('right')">›</button>
+    </div>
+  </div>
 
 
 
-
-
-
-  <!-- Optional: some overlay text to describe the video -->
 
   <div class="content">
     <div class="profile">
-      <img src="img/newAlbumCover.png" alt="Artist Picture">
-      <h1>Out of Boredom</h1>
       <p class="boldText">Listen to nicest girl out there</p>
       <p>Album on 17.10.10</p>
       <p>No ambition whatsoever redux</p>
     </div>
 
     <div class="links">
-      <a href="https://open.spotify.com/track/3JF1c7iRLybJnkVMIVkrko?si=b91220a863e248b5" target="_blank" class="spotify">Spotify</a>
+      <a href="https://open.spotify.com/track/3JF1c7iRLybJnkVMIVkrko?si=b91220a863e248b5" target="_blank"
+         class="spotify">Spotify</a>
       <a href="https://youtu.be/dEnjrGOHBwY?si=BMmVxNimIj5NCcsQ" target="_blank" class="youtube">YouTube</a>
       <a href="mailto:outofboredom168@gmail.com" class="contact">📩 Contact Me!!!</a>
     </div>
   </div>
+</div>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-023XHJJZV4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-023XHJJZV4');
-  </script>
 </body>
 
 </html>
