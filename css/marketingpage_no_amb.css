@@ -38,6 +38,15 @@ body {
   fill: currentColor;
 }
 
+#liveBox {
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#liveBox:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: scale(1.02);
+}
 /* Background video */
 #myVideo {
   position: fixed;

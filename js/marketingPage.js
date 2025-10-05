@@ -1,6 +1,9 @@
 var currentActiveIndexCarrousel = 0;
 
-
+const liveBox = document.getElementById('liveBox');
+liveBox.addEventListener('click', () => {
+  window.open('https://youtu.be/HdhHsbYvERY?si=mBcqC3RrRk9fuAxr', '_blank');
+});
 
 function onArrowClick(direction) {
   const ul = document.querySelector('.content ul');
