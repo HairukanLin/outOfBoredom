@@ -13,14 +13,13 @@ body {
   overflow-y: auto;  /* Changed from overflow: hidden */
 }
 
-*, *::before, *::after { box-sizing: border-box; }
-
-/* 3) Any media should never exceed the viewport width */
-img, video, iframe {
+html, body {
   max-width: 100%;
-  height: auto;
-  display: block;
+  overflow-x: clip;            /* modern, prevents overscroll bounce */
+  overscroll-behavior-x: none; /* stop scroll chaining horizontally */
 }
+
+
 
 .social-links {
   display: flex;
