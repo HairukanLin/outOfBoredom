@@ -1,5 +1,8 @@
 /* Reset body and setup flex center */
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Poppins', sans-serif;
   display: flex;
@@ -8,6 +11,15 @@ body {
   text-align: center;
   color: white;
   overflow-y: auto;  /* Changed from overflow: hidden */
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 3) Any media should never exceed the viewport width */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .social-links {
