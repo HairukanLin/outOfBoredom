@@ -178,8 +178,18 @@ html, body {
 
 
 
-.profile-pic img {
+.profile-pic-small img {
   width: 7em;             /* roughly 160px → 10em if base font-size ≈16px */
+  height: auto;
+  border-radius: 1.25em;   /* rounded rectangle corners */
+  border: 0.2em solid white;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.4);
+  margin-bottom: .3em;
+}
+
+
+.profile-pic-big img {
+  width: 16em;             /* roughly 160px → 10em if base font-size ≈16px */
   height: auto;
   border-radius: 1.25em;   /* rounded rectangle corners */
   border: 0.2em solid white;
