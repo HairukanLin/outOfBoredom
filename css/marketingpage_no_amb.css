@@ -63,7 +63,7 @@ html, body {
 /* Content card */
 .content {
   background: rgba(0,0,0,0.6);
-  padding: 40px 30px;
+  padding: 1em 1em;
   border-radius: 20px;
   max-width: 420px;
   width: 90%;
@@ -75,7 +75,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1em; /* space between elements */
+  gap: 0.6em; /* space between elements */
 }
 
 
@@ -179,12 +179,12 @@ html, body {
 
 
 .profile-pic img {
-  width: 10em;             /* roughly 160px → 10em if base font-size ≈16px */
+  width: 15em;             /* roughly 160px → 10em if base font-size ≈16px */
   height: auto;
   border-radius: 1.25em;   /* rounded rectangle corners */
   border: 0.2em solid white;
   box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.4);
-  margin-bottom: 1.2em;
+  margin-bottom: .3em;
 }
 
 
