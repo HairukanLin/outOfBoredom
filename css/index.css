@@ -79,10 +79,43 @@ h1{
   transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
 }
 
+#myBtnThree {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 170px; /* Adjusted for better fit */
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* Transparent white border */
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent black background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition on hover */
+}
+
 #myBtnTwo:hover {
   background: black; /* Full black background on hover */
   color: white; /* White text on hover */
   border-color: rgba(255, 255, 255, 1); /* Solid white border on hover */
+}
+
+#myBtnThree:hover {
+  background: black; /* Full black background on hover */
+  color: white; /* White text on hover */
+  border-color: rgba(255, 255, 255, 1); /* Solid white border on hover */
+}
+
+#myBtnThree p {
+  margin: 0; /* Remove default margin */
+  color: inherit; /* Inherit color from the button */
+  font-family: Arial;
+  font-size: 18px;
+  text-align: center; /* Center the text */
 }
 
 #myBtnTwo p {
@@ -118,21 +151,29 @@ h1{
   justify-content: center;
 }
 .image-background-noAmb {
-
-  width:40em; /*width of your image*/
-  height:40em; /*height of your image*/
+  width: 40em;
+  height: 40em;
   position: relative;
-  background: url("../CD-1.jpg");
-  background-size: contain;
-  overflow: hidden; /* Prevent content overflow */
+  background: url("../CD-1.jpg") center/contain no-repeat;
+  display: flex;            /* enables side-by-side layout */
+  overflow: hidden;
 }
 
+.left-half,
+.right-half {
+  flex: 1;                  /* each takes 50% of the width */
+  display: flex;            /* optional: center content */
+  justify-content: center;
+  align-items: center;
+  color: white;             /* example text color */
+  background: rgba(0, 0, 0, 0.4); /* optional overlay */
+}
 .image-background-sorry {
 
   width:39em; /*width of your image*/
   height:30em; /*height of your image*/
   position: relative;
-  background: url("../img/img.pngä");
+  background: url("../img/img.png");
   background-size: contain;
   overflow: hidden; /* Prevent content overflow */
 }
@@ -181,6 +222,13 @@ h1{
 
 @media (max-width: 768px) {
   #myBtnTwo {
+    top: 70%;
+    left: 22%;
+  }
+}
+
+@media (max-width: 768px) {
+  #myBtnThree {
     top: 70%;
     left: 22%;
   }
