@@ -1,0 +1,388 @@
+:root {
+    --black: rgb(0,0,0);
+    --topbar: rgb(28, 47, 59);
+    --boxshadow: rgba(0,0,0,0.2);
+    --link: rgb(104, 174, 255);
+    --font-1: rgb(255, 255, 255);
+    --fg-1: rgb(0,0,0);
+    --fg-2: rgb(127, 127, 127);
+    --bg-1: rgb(54, 62, 68);
+    --bg-2: rgb(16, 16, 16);
+    --bg-3: rgb(55, 69, 73);
+    --button-hover: rgb(39,39,39);
+    --cap-font-type: normal;
+}
+
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "main font";
+    font-weight: 400;
+    font-size: 1.1em;
+    font-style: normal;
+    color: var(--font-1);
+}
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/* Global Page Settings */
+body {
+    background-color: var(--black);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    outline: none;
+    border: 0;
+}
+
+/* No Link Marks */
+a:focus {
+    outline: none;
+}
+
+/* Top Navbar */
+.topbar {
+    background-color: var(--topbar);
+    height: 10vmin;
+    padding-right: 5vmin;
+    box-shadow: 0 2.5vmin 2.5vmin 0 var(--boxshadow);
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.topright a {
+    float: right;
+    font-variant: var(--cap-font-type);
+    font-size: 3vmin;
+    text-align: center;
+    padding: 1.25vmin;
+    line-height: 7.5vmin;
+    text-decoration: none;
+    font-variation-settings: 'wght' 600;
+}
+.topright a:hover {
+    background-color: var(--bg-2);
+    position: relative;
+    z-index: 4;
+}
+
+.topleft a {
+    float: left;
+    font-size: 3vmin;
+    text-align: center;
+    padding: 1.25vmin;
+    line-height: 7.5vmin;
+    text-decoration: none;
+    font-variation-settings: 'wght' 600;
+}
+.topleft p {
+    display: inline
+}
+.topleft img {
+    float: left;
+    height: 7.5vmin; 
+    width: 7.5vmin;
+}
+
+.current {
+    background-color: var(--bg-2);
+    position: relative;
+    z-index: 4;
+}
+
+/* Wrapper for scrollable part of the page */
+.scrollbody {
+    overflow-y: auto;
+    width: 100vw;
+    height: calc(100vh - 20vmin);
+    background-color: var(--bg-1);
+    position: relative;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+.noscriptbackground {
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-1);
+    position: relative;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+.tab {
+    font-variant: var(--cap-font-type);
+    padding-top: 4vmin;
+    font-size: 2.5rem;
+    color: var(--font-1);
+    text-align: center;
+    text-decoration: none;
+    font-variation-settings: 'wght' 500;
+}
+
+/* In-box captions */
+.cap {
+    font-size: 2rem;
+    color: var(--font-1);
+    font-variation-settings: 'wght' 600;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 8vmin;
+    padding-top: 4vmin;
+}
+
+.bc_list_cap {
+    font-size: 2rem;
+    color: var(--font-1);
+    font-variation-settings: 'wght' 600;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 4vmin;
+    padding-top: 4vmin;
+    font-variant: var(--cap-font-type);
+    text-align: center;
+}
+
+/* In-box dates */
+.date {
+    color: var(--fg-2);
+    font-size: 1.75rem;
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 8vmin;
+    padding-top: 0vmin;
+}
+
+/* Floating box in scrollable part */
+.contentbox {
+    height: min-content;
+    margin: 5vmin;
+    padding: 0;
+    width: calc(100vw - 11vmin);
+    background-color: var(--bg-3);
+    box-shadow: 1vmin 1vmin 3vmin 0 var(--boxshadow);
+    position: relative;
+    z-index: 2;
+}
+
+.imagebox {
+    min-height: 38vmin;
+}
+
+.videobox {
+    min-height: 38vmin;
+}
+
+.text {
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+    padding-bottom: 4vmin;
+    padding-top: 1vmin;
+}
+
+.text a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.missingpost {
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    text-align: center;
+    width: calc(100% - 16vmin);
+    padding: 8vmin;
+}
+
+.columns {
+    display: flex;
+}
+
+.post_image {
+    width: 30vmin;
+    height: 30vmin;
+    padding: 4vmin;
+    float: right;
+}
+
+.post_video {
+    width: 30vmin;
+    height: 30vmin;
+    padding: 4vmin;
+    float: right;
+}
+
+.album_track {
+    width: 100%;
+    aspect-ratio: 1;
+    float: right;
+}
+
+.spotlight {
+    padding: 4vmin;
+}
+
+.music_video_spotlight {
+    width: 60%;
+    padding-left: 20%;
+    aspect-ratio: 1.7777778;
+}
+
+.iframe_spotlight {
+    width: 100%;
+    height: 100%;
+}
+
+.videolist {
+    display: table;
+    width: calc(100vw - 14vmin);
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+    padding-bottom: 4vmin;
+}
+
+.videolist_element {
+    display: table-row;
+    float: left;
+    width: calc((100vw - 35vmin) / 5);
+    height: min-content;
+    padding-top: 2vmin;
+    padding-right: 4vmin;
+}
+
+.videocap {
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 400;
+    width: 100%;
+    padding-bottom: 1vmin;
+    text-wrap-mode: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-variant: var(--cap-font-type);
+    text-align: center;
+}
+
+.music_video_wrapper {
+    width: calc((100vw - 35vmin) / 5);
+    height: calc((100vw - 35vmin) / 5);
+}
+
+.music_video {
+    float: bottom;
+    width: calc((100vw - 35vmin) / 5);
+    height: calc((100vw - 35vmin) / 5);
+}
+
+/* Footer */
+.bottombar {
+    height: 10vmin;
+    background-color: var(--bg-3);
+    box-shadow: 0 -2.5vmin 2.5vmin 0 var(--boxshadow);
+    position: relative;
+    z-index: 3;
+}
+.bottombar img {
+    height: 5vmin;
+    width: 5vmin;
+    padding: 2.5vmin;
+}
+.bottombar img:hover {
+    background-color: var(--button-hover);
+    position: relative;
+    z-index: 4;
+}
+
+.bottombar p {
+    display: inline;
+    float: right;
+    font-size: 2vmin;
+    text-align: center;
+    padding: 1.25vmin;
+    padding-right: 4vmin;
+    line-height: 7.5vmin;
+    text-decoration: none;
+}
+
+.mv_thumbnail {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background: #000;
+}
+
+.mv_thumbnail img {
+    width: 100%;
+}
+
+.post_thumbnail {
+    width: 30vmin;
+    height: 30vmin;
+    margin: 4vmin;
+    float: right;
+    border: 0px;
+    background: #000;
+}
+
+.post_thumbnail img {
+    width: 100%;
+}
+
+.lyrics {
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 14vmin);
+    padding-left: 10vmin;
+    padding-right: 4vmin;
+    padding-bottom: 4vmin;
+    padding-top: 1vmin;
+}
+
+p.aboutme {
+    font-size: 1.25rem;
+    font-variation-settings: 'wght' 400;
+    line-break: normal;
+    width: calc(100% - 8vmin);
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+    padding-bottom: 4vmin;
+    padding-top: 4vmin;
+}
+
+p+p.aboutme {
+    padding-top: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1vmin;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(241, 241, 241, 0);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(79, 79, 79);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(63, 63, 63);
+  }
+
