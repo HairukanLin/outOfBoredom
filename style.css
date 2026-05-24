@@ -294,12 +294,12 @@ a:focus {
     position: relative;
     z-index: 3;
 }
-.bottombar img {
+.bottombar img:not(.ai) {
     height: 5vmin;
     width: 5vmin;
     padding: 2.5vmin;
 }
-.bottombar img:hover {
+.bottombar img:not(.ai):hover {
     background-color: var(--button-hover);
     position: relative;
     z-index: 4;
@@ -364,6 +364,13 @@ p.aboutme {
 
 p+p.aboutme {
     padding-top: 0;
+}
+
+.ai {
+    float: right;
+    width: 8vmin;
+    height: 8vmin;
+    padding: 1vmin;
 }
 
 /* width */
