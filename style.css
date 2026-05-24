@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
 :root {
     --black: rgb(0,0,0);
     --topbar: rgb(28, 47, 59);
@@ -5,7 +7,7 @@
     --link: rgb(104, 174, 255);
     --font-1: rgb(255, 255, 255);
     --fg-1: rgb(0,0,0);
-    --fg-2: rgb(127, 127, 127);
+    --fg-2: rgb(189, 189, 189);
     --bg-1: rgb(54, 62, 68);
     --bg-2: rgb(16, 16, 16);
     --bg-3: rgb(55, 69, 73);
@@ -17,8 +19,9 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "main font";
-    font-weight: 400;
+    /* font-family: "main font"; */
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 200;
     font-size: 1.1em;
     font-style: normal;
     color: var(--font-1);
@@ -83,7 +86,9 @@ a:focus {
     font-variation-settings: 'wght' 600;
 }
 .topleft p {
-    display: inline
+    display: inline;
+    padding-left: 1.5vmin;
+    font-weight: bold;
 }
 .topleft img {
     float: left;
@@ -120,19 +125,19 @@ a:focus {
 
 .tab {
     font-variant: var(--cap-font-type);
+    font-weight: bold;
     padding-top: 4vmin;
     font-size: 2.5rem;
     color: var(--font-1);
     text-align: center;
     text-decoration: none;
-    font-variation-settings: 'wght' 500;
 }
 
 /* In-box captions */
 .cap {
     font-size: 2rem;
     color: var(--font-1);
-    font-variation-settings: 'wght' 600;
+    font-weight: bold;
     line-break: normal;
     width: calc(100% - 8vmin);
     padding-left: 8vmin;
@@ -142,13 +147,13 @@ a:focus {
 .bc_list_cap {
     font-size: 2rem;
     color: var(--font-1);
-    font-variation-settings: 'wght' 600;
     line-break: normal;
     width: calc(100% - 8vmin);
     padding-left: 4vmin;
     padding-top: 4vmin;
     font-variant: var(--cap-font-type);
     text-align: center;
+    font-weight: bold;
 }
 
 /* In-box dates */
@@ -273,6 +278,30 @@ a:focus {
     text-overflow: ellipsis;
     font-variant: var(--cap-font-type);
     text-align: center;
+}
+
+.bc_wide_list {
+    margin: 4vmin;
+	width: calc(100% - 8vmin);
+	height: min-content;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.bc_wide_list_element:nth-child(2) {
+    margin-left: 4vmin;
+
+}
+
+.bc_wide_list_element {
+	aspect-ratio: 1.5;
+	flex-grow: 1;
+	flex-basis: 0;
+	flex-shrink: 1;
+	align-content: center;
+	max-width: 700px;
+	align-self: center;
+    margin-bottom: 4vmin;
 }
 
 .music_video_wrapper {
