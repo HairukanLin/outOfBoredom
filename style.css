@@ -281,16 +281,16 @@ a:focus {
 }
 
 .bc_wide_list {
-    margin: 4vmin;
 	width: calc(100% - 8vmin);
 	height: min-content;
 	display: flex;
 	flex-flow: row wrap;
-}
-
-.bc_wide_list_element:nth-child(2) {
-    margin-left: 4vmin;
-
+	max-width: calc(1400px + 4vmin);
+	align-self: center;
+	margin-left: max(4vmin, calc((100% - 1400px - 4vmin) / 2));
+	margin-top: 4vmin;
+    padding-bottom: 4vmin;
+    gap: 4vmin;
 }
 
 .bc_wide_list_element {
@@ -301,7 +301,6 @@ a:focus {
 	align-content: center;
 	max-width: 700px;
 	align-self: center;
-    margin-bottom: 4vmin;
 }
 
 .music_video_wrapper {
