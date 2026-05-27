@@ -1,0 +1,249 @@
+/* Reset body and setup flex center */
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow-y: auto;  /* Changed from overflow: hidden */
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: clip;            /* modern, prevents overscroll bounce */
+  overscroll-behavior-x: none; /* stop scroll chaining horizontally */
+}
+
+
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-links a {
+  color: #000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: opacity 0.2s ease;
+}
+
+.social-links a:hover {
+  opacity: 0.7;
+}
+
+.social-links svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Background video */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Content card */
+.content {
+  background: rgba(0,0,0,0.6);
+  padding: 1em 1em;
+  border-radius: 20px;
+  max-width: 420px;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+/* Make sure the main wrapper stacks elements neatly */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6em; /* space between elements */
+}
+
+
+.profile-name {
+  font-style: italic;
+}
+
+.content ul {
+  display: flex;
+  gap: 0.75em;
+  scroll-marker-group: after;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+
+
+.content li {
+  list-style-type: none;
+  padding: 20px;
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 0.9em;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.carousel-indicators span {
+  width: 8px;
+  height: 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators span.active {
+  background-color: #333;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 12px;
+}
+
+.share-button {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+
+  min-width: 2.5em;
+  min-height: 2.5em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.share-button:hover {
+  background-color: white;
+}
+
+.share-button:active {
+  transform: scale(0.98);
+}
+
+.carousel-arrow {
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.carousel-arrow:hover {
+  background-color: #333;
+  color: white;
+}
+
+
+.carousel-arrow:active {
+  transform: scale(0.95);
+}
+
+
+
+.profile-pic-small img {
+  width: 7em;             /* roughly 160px → 10em if base font-size ≈16px */
+  height: auto;
+  border-radius: 1.25em;   /* rounded rectangle corners */
+  border: 0.2em solid white;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.4);
+  margin-bottom: .3em;
+}
+
+
+.profile-pic-big img {
+  width: 16em;             /* roughly 160px → 10em if base font-size ≈16px */
+  height: auto;
+  border-radius: 1.25em;   /* rounded rectangle corners */
+  border: 0.2em solid white;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.4);
+  margin-bottom: .3em;
+}
+
+
+
+.content {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 2em 2em;
+  border-radius: 1.25em;
+  box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.6);
+}
+.boldText {
+  font-weight: bold;
+}
+
+.profile h1 {
+  margin: 10px 0 5px;
+  font-size: 28px;
+}
+
+.profile p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* Links */
+.links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.links a {
+  display: block;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.links a:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Platform-specific colors */
+.spotify { background: #1DB954; color: white; }
+.apple { background: #FA233B; color: white; }
+.soundcloud { background: #FF5500; color: white; }
+.youtube { background: #FF0000; color: white; }
+.contact { background: #444; color: white; }
