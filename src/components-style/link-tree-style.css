@@ -1,0 +1,23 @@
+.link-elem{
+  position: fixed;
+  bottom: 2rem;
+  display: flex;
+  width: 24.5625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.1rem;
+  list-style: none;
+  color: var(--color-light-pink);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+@media (min-width: 600px) {
+  .link-elem {
+    left: 1.5rem;
+  }
+}
+
+.link-elem a{
+    color: var(--color-light-pink);
+    text-decoration: none;
+}
