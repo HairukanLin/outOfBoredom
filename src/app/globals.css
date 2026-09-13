@@ -1,3 +1,10 @@
 * {
   font-family: var(--font-cutive-mono);
 }
+
+:root {
+  --color-light-pink: #DEB4DA;
+  --color-dark-red: #3E0F28;
+  --color-light-green: #BED2BF;
+  --color-light-black: #030305;
+}
