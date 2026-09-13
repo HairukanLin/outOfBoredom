@@ -1,3 +1,11 @@
-export default function MusicPlayerComponent() {
-    return <p>我他妈的</p>;
+import {MusicPlayerConfig} from "@/types/MusicPlayerConfig";
+
+export default function MusicPlayerComponent({ config }: { config: MusicPlayerConfig }) {
+    return (
+        <>
+            <p>{config.albumTitle}</p>
+            <p></p>
+            <p>PLAY</p>
+        </>
+    );
 }
