@@ -43,7 +43,7 @@ const noAmbWhatReduxTracks: Track[] = [
   { trackName: "No ambition whatsoever - Redux", url: "" },
 ];
 
-export class StaticMusicAlbumService implements IMusicAlbumService {
+export class OfflineMusicAlbumService implements IMusicAlbumService {
   public getAlbum(albumName: AlbumName): MusicPlayerConfig {
     switch (albumName) {
       case AlbumName.NO_AMB_WHAT:
