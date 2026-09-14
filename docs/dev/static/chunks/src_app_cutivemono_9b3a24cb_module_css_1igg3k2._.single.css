@@ -1,0 +1,29 @@
+/* [project]/src/app/cutivemono_9b3a24cb.module.css [app-client] (css) */
+@font-face {
+  font-family: cutiveMono;
+  src: url("../media/CutiveMono_Regular-s.p.2-riner5060al.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cutiveMono Fallback;
+  src: local(Arial);
+  ascent-override: 62.45%;
+  descent-override: 20.53%;
+  line-gap-override: 0.0%;
+  size-adjust: 132.69%;
+}
+
+.cutivemono_9b3a24cb-module__qA7pDq__className {
+  font-family: cutiveMono, cutiveMono Fallback;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.cutivemono_9b3a24cb-module__qA7pDq__variable {
+  --font-cutive-mono: "cutiveMono", "cutiveMono Fallback";
+}
+
+/*# sourceMappingURL=src_app_cutivemono_9b3a24cb_module_css_1igg3k2._.single.css.map*/

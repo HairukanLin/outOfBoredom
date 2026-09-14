@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/I776342/projects/hpi/outOfBoredom/src/components-style/music-player-component.module.css"],"sourcesContent":[".title {\n  color: var(--color-dark-red);\n  -webkit-text-stroke: 0.9px currentColor;\n  font-size: 1rem;\n  line-height: normal;\n}\n\n\n.divAlbumSwitcherHeader{\n  display: flex;\n  flex-direction: row;\n  padding-bottom: 0;\n}\n\n.playButton {\n  margin-top: 0;\n  cursor: pointer;\n}\n\n.divMusicPlayer {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  gap: 0;\n}\n\n.divMusicPlayer p {\n  margin: 0.1em;\n}\n\n.bottomLeft {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  align-items: flex-start;\n  padding: 2rem;\n}\n\n.bottomLeftFont {\n  color: var(--color-light-pink);\n}\n\n.selectedTrackList {\n  cursor: pointer;\n  padding-block: 1rem;\n  -webkit-text-stroke: 0.9px currentColor;\n}\n\n\n.notSelectedTrackList {\n  cursor: pointer;\n}\n\n\n\n.trackList {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAQA;;;;;;AAMA;;;;;AAKA;;;;;;;AAOA;;;;AAIA;;;;;;;;AAQA;;;;AAIA;;;;;;AAOA;;;;AAMA"}}]
+}

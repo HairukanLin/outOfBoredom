@@ -1,0 +1,59 @@
+/* [project]/src/components-style/music-player-component.module.css [app-client] (css) */
+.music-player-component-module__sMAq8q__title {
+  color: var(--color-dark-red);
+  -webkit-text-stroke: .9px currentColor;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+.music-player-component-module__sMAq8q__divAlbumSwitcherHeader {
+  flex-direction: row;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.music-player-component-module__sMAq8q__playButton {
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.music-player-component-module__sMAq8q__divMusicPlayer {
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  display: flex;
+}
+
+.music-player-component-module__sMAq8q__divMusicPlayer p {
+  margin: .1em;
+}
+
+.music-player-component-module__sMAq8q__bottomLeft {
+  align-items: flex-start;
+  padding: 2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.music-player-component-module__sMAq8q__bottomLeftFont {
+  color: var(--color-light-pink);
+}
+
+.music-player-component-module__sMAq8q__selectedTrackList {
+  cursor: pointer;
+  -webkit-text-stroke: .9px currentColor;
+  padding-block: 1rem;
+}
+
+.music-player-component-module__sMAq8q__notSelectedTrackList {
+  cursor: pointer;
+}
+
+.music-player-component-module__sMAq8q__trackList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*# sourceMappingURL=src_components-style_music-player-component_module_1ttuyoz.css.map*/

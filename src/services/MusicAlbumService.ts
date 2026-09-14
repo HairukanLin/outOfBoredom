@@ -54,7 +54,12 @@ export class OfflineMusicAlbumService implements IMusicAlbumService {
           tracksPlayerColor: Color.LIGHT_GREEN,
         };
       case AlbumName.TRULY_SORRY:
-        return { albumTitle: albumNameToString(albumName), tracks: this.populateTrackPaths(albumName, trulySorryTracks) };
+        return { albumTitle: albumNameToString(albumName),
+          tracks: this.populateTrackPaths(albumName, trulySorryTracks),
+        headerPlayerMainColor: Color.LIGHT_GREEN,
+          tracksPlayerColor: Color.LIGHT_BLUE,
+        };
+
       case AlbumName.NO_AMB_WHAT_REDUX:
         return {
           albumTitle: albumNameToString(albumName),

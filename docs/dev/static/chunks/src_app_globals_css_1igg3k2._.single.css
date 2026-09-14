@@ -1,0 +1,32 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  font-family: var(--font-cutive-mono), "Cutive Mono";
+}
+
+:root {
+  --color-light-pink: #deb4da;
+  --color-dark-red: #3e0f28;
+  --color-light-green: #bed2bf;
+  --color-light-black: #030305;
+  --color-white: #fff;
+  --color-light-blue: #e0ffff;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url("/ffy_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-image: url("/ffy_web.jpg");
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_css_1igg3k2._.single.css.map*/

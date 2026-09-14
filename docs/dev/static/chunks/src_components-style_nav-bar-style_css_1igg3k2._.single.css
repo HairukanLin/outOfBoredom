@@ -1,0 +1,23 @@
+/* [project]/src/components-style/nav-bar-style.css [app-client] (css) */
+.nav-elem {
+  color: var(--color-white);
+  -webkit-text-stroke-width: .6px;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0;
+  padding: 3rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  list-style: none;
+  display: flex;
+}
+
+.nav-elem a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-elem a.active {
+  -webkit-text-stroke: .9px currentColor;
+}
+
+/*# sourceMappingURL=src_components-style_nav-bar-style_css_1igg3k2._.single.css.map*/

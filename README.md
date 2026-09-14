@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# outOfBoredom
 
-## Getting Started
+Personal music player site. Lives at [outofboredom.de](https://outofboredom.de).
 
-First, run the development server:
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build and deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The site is hosted on GitHub Pages, served from the `docs/` folder on the `main` branch.
 
-## Learn More
+**1. Build**
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This outputs the static site into `docs/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**2. Commit and push**
 
-## Deploy on Vercel
+```bash
+git add docs/
+git commit -m "deploy"
+git push
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub Pages picks up the new `docs/` automatically. The site updates within ~60 seconds.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Adding new music
+
+1. Add the album folder under `public/music/<AlbumName>/` with files named `1.mp3`, `2.mp3`, ... in track order.
+2. Add the album to `AlbumName` and `AlbumId` enums in `src/types/MusicPlayerConfig.ts`.
+3. Add the track array and a `case` in `OfflineMusicAlbumService` in `src/services/MusicAlbumService.ts`.
+4. Build and deploy.

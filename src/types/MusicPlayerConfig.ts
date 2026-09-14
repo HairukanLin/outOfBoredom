@@ -9,6 +9,7 @@ export enum Color {
   DARK_RED = "var(--color-dark-red)",
   LIGHT_GREEN = "var(--color-light-green)",
   LIGHT_BLACK = "var(--color-light-black)",
+  LIGHT_BLUE = "var(--color-light-blue)",
   WHITE = "var(--color-white)",
 }
 
