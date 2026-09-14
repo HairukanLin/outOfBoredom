@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "@/components-style/music-player-component.module.css";
 import IConButtonComponent from "@/components/icon-button-component";
 import {Color} from "@/types/MusicPlayerConfig";
@@ -51,7 +53,7 @@ export default function MusicPlayerHeaderComponent({
                 }} />
             </div>
             <p style={{color: headerColor}}>{currentTrackName}</p>
-            <p className={styles.playButton} style={{color: headerColor}}>PLAY</p>
+
         </>
     );
 }
