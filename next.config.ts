@@ -4,6 +4,8 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   output: "export",
   distDir: "docs",
+  basePath: "/outOfBoredom",
+  assetPrefix: "/outOfBoredom",
   images: {
     unoptimized: true,
   },
