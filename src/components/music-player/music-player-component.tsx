@@ -1,16 +1,15 @@
+"use client";
+
 import {
     albumCount,
     albumIdToName,
-    AlbumName,
-    albumNameToId,
     Color,
     MusicPlayerConfig,
-    Track
 } from "@/types/MusicPlayerConfig";
 import styles from "@/components-style/music-player-component.module.css";
 import {IMusicAlbumService, OfflineMusicAlbumService} from "@/services/MusicAlbumService";
 import MusicPlayerHeaderComponent from "@/components/music-player/music-player-header-component";
-import {Dispatch, SetStateAction, useRef, useState} from "react";
+import {Dispatch, SetStateAction, useEffect, useRef, useState} from "react";
 import MusicPlayerTrackListComponent from "@/components/music-player/music-player-track-list-component";
 
 
@@ -23,20 +22,35 @@ type MusicPlayerProps = {
 
 export default function MusicPlayerComponent({albumIndex, setAlbumIndex}: MusicPlayerProps) {
     const [currentTrackIndex, setCurrentTrackIndex] = useState<number>(0);
-    const [isPlaying, setIsPlaying] = useState<boolean>(true);
+    const [isPlaying, setIsPlaying] = useState<boolean>(false);
     const albumConfig: MusicPlayerConfig = albumService.getAlbum(albumIdToName(albumIndex))
     const headerColor = albumConfig.headerPlayerMainColor ?? Color.DARK_RED;
     const tracksColor = albumConfig.tracksPlayerColor ?? Color.LIGHT_PINK;
 
     const audioRef = useRef<HTMLAudioElement>(null);
 
+    // undefined (not "") when there's no track — an empty src makes the
+    // browser try to reload the page itself as audio.
+    const currentTrackPath = albumConfig.tracks.at(currentTrackIndex)?.url;
+
+    // Keep the <audio> element in sync with React state.
+    // Re-runs whenever play/pause is toggled or the current track (src) changes.
+    useEffect(() => {
+        const audio = audioRef.current;
+        if (!audio) return;
+
+        if (isPlaying && currentTrackPath) {
+            // play() returns a promise that rejects if the browser blocks autoplay
+            audio.play().catch(() => setIsPlaying(false));
+        } else {
+            audio.pause();
+        }
+    }, [isPlaying, currentTrackPath]);
 
     const switchAlbum = (step: number) => {
         setCurrentTrackIndex(0);
         setAlbumIndex(prev => (prev + step + albumCount()) % albumCount());
     };
-
-    const currentTrackPath = albumConfig.tracks.at(currentTrackIndex)?.url ?? "";
 
     return (
         <>
@@ -55,26 +69,16 @@ export default function MusicPlayerComponent({albumIndex, setAlbumIndex}: MusicP
                 >
                     {isPlaying ? "STOP" : "PLAY"}
                 </p>
-                <audio ref={audioRef} src={currentTrackPath}></audio>
+                <audio
+                    ref={audioRef}
+                    src={currentTrackPath}
+                    preload="none"
+                    onEnded={() => setIsPlaying(false)}
+                />
                 <MusicPlayerTrackListComponent tracks={albumConfig.tracks} trackColors={tracksColor}
                                                currentIndex={currentTrackIndex} setAlbumIndex={setCurrentTrackIndex}/>
             </div>
 
         </>
     );
-
-    function playSong(trackPath: string) {
-        if(trackPath === "") {
-            return;
-        }
-        audioRef.current?.play();
-
-
-    }
-
-    function stopSong() {
-        audioRef.current?.pause();
-        audioRef.current!.currentTime = 0;
-    }
 }
-

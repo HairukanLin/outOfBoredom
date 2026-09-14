@@ -49,16 +49,32 @@ export class OfflineMusicAlbumService implements IMusicAlbumService {
       case AlbumName.NO_AMB_WHAT:
         return {
           albumTitle: albumNameToString(albumName),
-          tracks: noAmbWhatTracks,
+          tracks: this.populateTrackPaths(albumName, noAmbWhatTracks),
           headerPlayerMainColor: Color.LIGHT_BLACK,
           tracksPlayerColor: Color.LIGHT_GREEN,
         };
       case AlbumName.TRULY_SORRY:
-        return { albumTitle: albumNameToString(albumName), tracks: trulySorryTracks };
+        return { albumTitle: albumNameToString(albumName), tracks: this.populateTrackPaths(albumName, trulySorryTracks) };
       case AlbumName.NO_AMB_WHAT_REDUX:
-        return { albumTitle: albumNameToString(albumName), tracks: noAmbWhatReduxTracks };
+        return {
+          albumTitle: albumNameToString(albumName),
+          tracks: this.populateTrackPaths(albumName, noAmbWhatTracks),
+          headerPlayerMainColor: Color.LIGHT_BLACK,
+          tracksPlayerColor: Color.LIGHT_GREEN,
+        };
       case AlbumName.FALLING_FOR_U:
         return { albumTitle: albumNameToString(albumName), tracks: [] };
     }
   }
+
+  // Files live in public/music/<AlbumName>/<n>.mp3, numbered 1..N in track order.
+  // encodeURIComponent handles the spaces in the folder name.
+  private populateTrackPaths(albumName: AlbumName, tracks: Track[]): Track[] {
+    const folder = encodeURIComponent(albumNameToString(albumName));
+    return tracks.map((track, index) => ({
+      ...track,
+      url: `/music/${folder}/${index + 1}.mp3`,
+    }));
+  }
+
 }
