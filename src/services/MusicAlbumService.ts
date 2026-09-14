@@ -71,10 +71,9 @@ export class OfflineMusicAlbumService implements IMusicAlbumService {
   // encodeURIComponent handles the spaces in the folder name.
   private populateTrackPaths(albumName: AlbumName, tracks: Track[]): Track[] {
     const folder = encodeURIComponent(albumNameToString(albumName));
-    const base = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
     return tracks.map((track, index) => ({
       ...track,
-      url: `${base}/music/${folder}/${index + 1}.mp3`,
+      url: `/music/${folder}/${index + 1}.mp3`,
     }));
   }
 
