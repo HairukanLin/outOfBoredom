@@ -1,7 +1,7 @@
 "use client";
 
 import {useState} from "react";
-import MusicPlayerComponent from "@/components/music-player-component";
+import MusicPlayerComponent from "@/components/music-player/music-player-component";
 import styles from "../page.module.css";
 
 

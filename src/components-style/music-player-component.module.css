@@ -1,6 +1,6 @@
 .title {
   color: var(--color-dark-red);
-  font-weight: 400;
+  -webkit-text-stroke: 0.9px currentColor;
   font-size: 1rem;
   line-height: normal;
 }
@@ -9,9 +9,11 @@
 .divAlbumSwitcherHeader{
   display: flex;
   flex-direction: row;
+  padding-bottom: 0;
 }
 
 .playButton {
+  margin-top: 0;
   cursor: pointer;
 }
 
@@ -19,6 +21,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 0;
+}
+
+.divMusicPlayer p {
+  margin: 0.1em;
 }
 
 .bottomLeft {
@@ -32,6 +39,19 @@
 .bottomLeftFont {
   color: var(--color-light-pink);
 }
+
+.selectedTrackList {
+  cursor: pointer;
+  padding-block: 1rem;
+  -webkit-text-stroke: 0.9px currentColor;
+}
+
+
+.notSelectedTrackList {
+  cursor: pointer;
+}
+
+
 
 .trackList {
   list-style: none;

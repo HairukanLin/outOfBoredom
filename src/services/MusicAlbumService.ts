@@ -1,4 +1,4 @@
-import {AlbumName, albumNameToString, MusicPlayerConfig, Track} from "@/types/MusicPlayerConfig";
+import {AlbumName, albumNameToString, Color, MusicPlayerConfig, Track} from "@/types/MusicPlayerConfig";
 
 export interface IMusicAlbumService {
   getAlbum(albumName: AlbumName): MusicPlayerConfig;
@@ -47,7 +47,12 @@ export class OfflineMusicAlbumService implements IMusicAlbumService {
   public getAlbum(albumName: AlbumName): MusicPlayerConfig {
     switch (albumName) {
       case AlbumName.NO_AMB_WHAT:
-        return { albumTitle: albumNameToString(albumName), tracks: noAmbWhatTracks };
+        return {
+          albumTitle: albumNameToString(albumName),
+          tracks: noAmbWhatTracks,
+          headerPlayerMainColor: Color.LIGHT_BLACK,
+          tracksPlayerColor: Color.LIGHT_GREEN,
+        };
       case AlbumName.TRULY_SORRY:
         return { albumTitle: albumNameToString(albumName), tracks: trulySorryTracks };
       case AlbumName.NO_AMB_WHAT_REDUX:

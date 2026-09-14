@@ -3,9 +3,20 @@ export type Track = {
   url: string;
 };
 
+// Color scheme — values point at the CSS variables defined in globals.css
+export enum Color {
+  LIGHT_PINK = "var(--color-light-pink)",
+  DARK_RED = "var(--color-dark-red)",
+  LIGHT_GREEN = "var(--color-light-green)",
+  LIGHT_BLACK = "var(--color-light-black)",
+  WHITE = "var(--color-white)",
+}
+
 export type MusicPlayerConfig = {
   albumTitle: string;
   tracks: Track[];
+  headerPlayerMainColor?: string;
+  tracksPlayerColor?: string;
 };
 
 export type Icon = {
