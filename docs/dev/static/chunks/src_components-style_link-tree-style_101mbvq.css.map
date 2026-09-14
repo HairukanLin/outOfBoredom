@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/I776342/projects/hpi/outOfBoredom/src/components-style/link-tree-style.css"],"sourcesContent":[".link-elem-ancient{\n  position: fixed;\n  bottom: 2rem;\n  display: flex;\n  width: 24.5625rem;\n  flex-direction: column;\n  align-items: flex-start;\n  gap: 1.1rem;\n  list-style: none;\n  color: var(--color-light-pink);\n  font-size: clamp(1.5rem, 3vw, 2rem);\n}\n\n\n\n\n\n.link-elem {\n  display: flex;\n  flex-direction: column;\n  position: fixed;\n  bottom: 2rem;\n  gap: 1rem;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n}\n\n\n\n\n@media (min-width: 600px) {\n  .link-elem {\n    left: 1.5rem;\n  }\n}\n\n.link-elem a{\n  padding: 1rem;\n    color: var(--color-light-pink);\n    text-decoration: none;\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;AAiBA;;;;;;;;;;;AAcA;EACE;;;;;AAKF"}}]
+}

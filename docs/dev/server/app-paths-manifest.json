@@ -1,3 +1,4 @@
 {
-  "/music/page": "app/music/page.js"
+  "/music/page": "app/music/page.js",
+  "/socials/page": "app/socials/page.js"
 }
