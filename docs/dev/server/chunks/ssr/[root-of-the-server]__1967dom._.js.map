@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///Users/I776342/projects/hpi/outOfBoredom/src/components/nav-bar-component.tsx"],"sourcesContent":["\"use client\";\n\nimport Link from \"next/link\";\nimport { usePathname } from \"next/navigation\";\nimport \"../components-style/nav-bar-style.css\"\n\nexport default function NavBarComponent() {\n    const pathname = usePathname();\n\n    return  (\n    <ul className=\"nav-elem\">\n        <li><Link className={pathname === \"/socials\" ? \"active\" : \"\"} href=\"/socials\">socials</Link></li>\n        <li><Link className={pathname === \"/music\" ? \"active\" : \"\"} href=\"/music\">music</Link></li>\n    </ul>\n    );\n}\n"],"names":["NavBarComponent","pathname","className","href"],"mappings":";;;;;AAEA;AACA;AAHA;;;;;AAMe,SAASA;IACpB,MAAMC,WAAW,IAAA,iJAAW;IAE5B,qBACA,8OAAC;QAAGC,WAAU;;0BACV,8OAAC;0BAAG,cAAA,8OAAC,uKAAI;oBAACA,WAAWD,aAAa,aAAa,WAAW;oBAAIE,MAAK;8BAAW;;;;;;;;;;;0BAC9E,8OAAC;0BAAG,cAAA,8OAAC,uKAAI;oBAACD,WAAWD,aAAa,WAAW,WAAW;oBAAIE,MAAK;8BAAS;;;;;;;;;;;;;;;;;AAGlF"}}]
-}
