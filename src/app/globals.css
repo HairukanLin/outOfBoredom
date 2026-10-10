@@ -9,7 +9,6 @@
   --color-light-black: #030305;
   --color-white: #FFFFFF;
   --color-light-blue: #E0FFFF;
-
 }
 
 html, body {
@@ -17,14 +16,3 @@ html, body {
   margin: 0;
 }
 
-body {
-  background-image: url("/ffy_mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 600px) {
-  body {
-    background-image: url("/ffy_web.jpg");
-  }
-}

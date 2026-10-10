@@ -1,4 +1,4 @@
-.link-elem-ancient{
+.link-elem {
   position: fixed;
   bottom: 2rem;
   display: flex;
@@ -8,26 +8,9 @@
   gap: 1.1rem;
   list-style: none;
   color: var(--color-light-pink);
-  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  cursor: pointer;
 }
-
-
-
-
-
-.link-elem {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 2rem;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-
-
 
 @media (min-width: 600px) {
   .link-elem {
