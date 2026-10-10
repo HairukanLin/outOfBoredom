@@ -98,7 +98,7 @@ var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.sign
 ;
 ;
 const backgrounds = [
-    "/naw_web.png",
+    "/naw_web.jpeg",
     "/maomao.jpeg",
     "/nawr_web.jpeg",
     "/ffy_web.jpeg"
@@ -112,11 +112,11 @@ const mobileBackgrounds = [
 function useMediaQuery(query) {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(4);
-    if ($[0] !== "3c7ff1d4435c967f0348f1351e6ddb3b4055be001635b566f28035a01a082d4a") {
+    if ($[0] !== "e476211194622d47e2d8500c175838c170b7eec53f75c4913aabb9ea864f46ce") {
         for(let $i = 0; $i < 4; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3c7ff1d4435c967f0348f1351e6ddb3b4055be001635b566f28035a01a082d4a";
+        $[0] = "e476211194622d47e2d8500c175838c170b7eec53f75c4913aabb9ea864f46ce";
     }
     let t0;
     let t1;
@@ -151,11 +151,11 @@ function _useMediaQueryUseSyncExternalStoreArg() {
 function BackgroundImageComponent(t0) {
     _s1();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(3);
-    if ($[0] !== "3c7ff1d4435c967f0348f1351e6ddb3b4055be001635b566f28035a01a082d4a") {
+    if ($[0] !== "e476211194622d47e2d8500c175838c170b7eec53f75c4913aabb9ea864f46ce") {
         for(let $i = 0; $i < 3; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "3c7ff1d4435c967f0348f1351e6ddb3b4055be001635b566f28035a01a082d4a";
+        $[0] = "e476211194622d47e2d8500c175838c170b7eec53f75c4913aabb9ea864f46ce";
     }
     const { albumIndex } = t0;
     const isMobile = useMediaQuery("(max-width: 768px)");

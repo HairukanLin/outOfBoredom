@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///Users/angelinahuck/Desktop/outOfBoredom/src/components-style/popUps/redirect-link.module.css"],"sourcesContent":[".redirectPopUp {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 1000;\n\n  width: clamp(280px, 80vw, 500px);\n  padding: 2rem;\n  box-sizing: border-box;\n\n  background-image: url(\"/redirect_popup.svg\");\n  background-repeat: no-repeat;\n  background-position: center;\n}\n\n.redirectPopUp p {\n  display: flexbox;\n  text-align: center;\n  cursor: default;\n}\n\n.redirectPopUp span {\n  cursor: pointer;\n  padding: 2rem; \n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;AAgBA;;;;;;AAMA"}},
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file:///Users/angelinahuck/Desktop/outOfBoredom/src/components-style/link-tree-style.css"],"sourcesContent":[".link-elem {\n  position: fixed;\n  bottom: 2rem;\n  display: flex;\n  width: 24.5625rem;\n  flex-direction: column;\n  align-items: flex-start;\n  gap: 1.1rem;\n  list-style: none;\n  color: var(--color-light-pink);\n  font-size: clamp(1rem, 1vw, 1.5rem);\n  cursor: pointer;\n}\n\n@media (min-width: 600px) {\n  .link-elem {\n    left: 1.5rem;\n  }\n}\n\n.link-elem a{\n  padding: 1rem;\n    color: var(--color-light-pink);\n    text-decoration: none;\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;AAcA;EACE;;;;;AAKF"}}]
+}

@@ -1,22 +1,12 @@
 /* [project]/src/components-style/link-tree-style.css [app-client] (css) */
-.link-elem-ancient {
+.link-elem {
   width: 24.5625rem;
   color: var(--color-light-pink);
+  cursor: pointer;
   flex-direction: column;
   align-items: flex-start;
   gap: 1.1rem;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  list-style: none;
-  display: flex;
-  position: fixed;
-  bottom: 2rem;
-}
-
-.link-elem {
-  flex-direction: column;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+  font-size: clamp(1rem, 1vw, 1.5rem);
   list-style: none;
   display: flex;
   position: fixed;

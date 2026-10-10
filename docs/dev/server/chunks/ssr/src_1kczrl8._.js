@@ -69,7 +69,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 ;
 const backgrounds = [
-    "/naw_web.png",
+    "/naw_web.jpeg",
     "/maomao.jpeg",
     "/nawr_web.jpeg",
     "/ffy_web.jpeg"

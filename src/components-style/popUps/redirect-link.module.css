@@ -1,0 +1,26 @@
+.redirectPopUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+
+  width: clamp(280px, 80vw, 500px);
+  padding: 2rem;
+  box-sizing: border-box;
+
+  background-image: url("/redirect_popup.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.redirectPopUp p {
+  display: flexbox;
+  text-align: center;
+  cursor: default;
+}
+
+.redirectPopUp span {
+  cursor: pointer;
+  padding: 2rem; 
+}
