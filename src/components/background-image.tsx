@@ -3,7 +3,7 @@
 import { useSyncExternalStore } from "react";
 
 const backgrounds = ["/naw_web.jpeg", "/maomao.jpeg", "/nawr_web.jpeg", "/ffy_web.jpeg"]
-const mobileBackgrounds = ["/naw_mobile.PNG", "/maomao_mobile.jpeg", "/nawr_web.jpeg", "/ffy_mobile.jpg"]
+const mobileBackgrounds = ["/naw_mobile.png", "/maomao_mobile.jpeg", "/nawr_web.jpeg", "/ffy_mobile.jpg"]
 
 function useMediaQuery(query: string) {
   return useSyncExternalStore(
